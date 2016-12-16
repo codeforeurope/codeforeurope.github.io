@@ -2029,7 +2029,6 @@ a.learn-btn {
 
 .intro-text{
 	padding: 100px 50px 100px 50px;
-	background-color: #EFFCD4;
 	font-size: 30px;
 	font-style: italic;
 }
@@ -2130,7 +2129,7 @@ h1.fellowship-title {
 
 .featured {
 	padding: 100px 50px 100px 50px;
-	background-color: #D1F9F8;
+	background-color: #56A0D3;
 }
 
 .feature-inner {
@@ -2156,7 +2155,6 @@ h1.fellowship-title {
     content: ' ';
     display: block;
     height: 10px;
-    background: rgb(0, 153, 204) url('http://codeforeurope.net/css/bg2.png') repeat;
     border-radius: 0 0 5px 5px;
 }
 
@@ -6718,4 +6716,37 @@ Copyright (c) 2015 Daniel Eden
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
+}
+.enoll img,.code-for-all img{max-width:30%}
+/* latin */
+@font-face {
+  font-family: 'Lobster Two';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster Two'), local('LobsterTwo'), url(/web/20160406145654/http://fonts.gstatic.com/s/lobstertwo/v8/Law3VVulBOoxyKPkrNsAaI4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Lobster Two';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lobster Two Bold'), local('LobsterTwo-Bold'), url(/web/20160406145654/http://fonts.gstatic.com/s/lobstertwo/v8/bmdxOflBqMqjEC0-kGsIiIlIZu-HDpmDIZMigmsroc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Lobster Two';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lobster Two Italic'), local('LobsterTwo-Italic'), url(/web/20160406145654/http://fonts.gstatic.com/s/lobstertwo/v8/Ul_16MSbfayQv1I4QhLEoMu2Q0OS-KeTAWjgkS85mDg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Lobster Two';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lobster Two Bold Italic'), local('LobsterTwo-BoldItalic'), url(/web/20160406145654/http://fonts.gstatic.com/s/lobstertwo/v8/LEkN2_no_6kFvRfiBZ8xpI9ObOXPY1wUIXqKtDjSdsY.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
