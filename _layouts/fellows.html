@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US" class=" js no-touch">
 {% include header.html %}
-
 <body class="page page-id-1251 page-template page-template-page-full-width-php group-blog">
   <div id="page" class="hfeed site">
     {% include pagehead.html %}
@@ -11,36 +10,40 @@
           <div class="container">
             <div class="col-md-8">
               <header class="page-entry-header">
-                <h1 class="entry-title">{{ page.title }}</h1>
+                <h1 class="entry-title">Fellows</h1>
               </header>
+              {{ content }}
+              {% for member in site.github.organization_members %}
               <article id="post-1684" class="post type-post status-publish format-standard has-post-thumbnail hentry category-stories">
                 <header class="entry-header">
-                  {% unless page.hide_meta %}
+                  <h1 class="entry-title"><a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a></h1>
                   <div class="entry-meta">
-                    <span class="posted-on">Posted on <a href="{{ post.url }}" rel="bookmark">
-                      <time class="entry-date published" datetime="{{ post.date }}">{{ page.date | date: '%B %d, %Y' }}</time></a>
-                    </span>
-                    <span class="byline"> by <span class="author vcard"><a class="url fn n" href="author/{{ post.author }}">{{ page.author}}</a><span></span>
                   </div>
-                  {% endunless %}
                 </header>
                 <div class="entry-content">
-                  {{ content }}
+                  <a href="{{ member.html_url }}">
+                    <img src="{{ member.avatar_url }}" width="68" />
+                  </a><br/>
+                  {{ member.login }}
+                  <!-- {{ member.site_admin }} -->
                 </div>
+                <footer class="entry-footer"></footer>
               </article>
+              {% endfor %}
             </div>
-          </div>
+              <!--.col-md-8-->
+            </div>
+            <!--.container-->
         </main>
         <!-- #main -->
+        </div>
+        <!-- #primary -->
       </div>
-      <!-- #primary -->
+      <!-- #content -->
+      {% include footer.html %}
+      <!-- #colophon -->
     </div>
-    <!-- #content -->
-    {% include footer.html %}
-    <!-- #colophon -->
-  </div>
-  <!-- #page -->
-  {% include scripts.html %}
+    <!-- #page -->
+    {% include scripts.html %}
 </body>
-
 </html>
