@@ -14,7 +14,7 @@
               </header>
               {{ content }}
               {% for member in site.github.organization_members %}
-              <article id="post-1684" class="post type-post status-publish format-standard has-post-thumbnail hentry category-stories">
+              <article class="post type-post status-publish format-standard has-post-thumbnail hentry category-stories">
                 <header class="entry-header">
                   <h1 class="entry-title"><a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a></h1>
                   <div class="entry-meta">
@@ -25,7 +25,6 @@
                     <img class="img-responsive" alt="{{ member.login }}" title="{{ member.login }}" src="{{ member.avatar_url }}" width="100" />
                   </a>
                 </div>
-                <footer class="entry-footer"></footer>
               </article>
               {% endfor %}
             </div>
