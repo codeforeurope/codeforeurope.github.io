@@ -22,10 +22,8 @@
                 </header>
                 <div class="entry-content">
                   <a href="{{ member.html_url }}">
-                    <img src="{{ member.avatar_url }}" width="68" />
-                  </a><br/>
-                  {{ member.login }}
-                  <!-- {{ member.site_admin }} -->
+                    <img alt="{{ member.login }}" title="{{ member.login }}" src="{{ member.avatar_url }}" />
+                  </a>
                 </div>
                 <footer class="entry-footer"></footer>
               </article>
