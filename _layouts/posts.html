@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US" class=" js no-touch">
+{% include header.html %}
+<body class="page page-id-1251 page-template page-template-page-full-width-php group-blog">
+  <div id="page" class="hfeed site">
+    {% include pagehead.html %}
+    <div id="content" class="site-content">
+      <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+          <div class="container">
+            <div class="col-md-8">
+              <header class="page-entry-header">
+                <h1 class="entry-title">Updates</h1>
+              </header>
+              <!-- .entry-header -->
+              {% for post in site.posts %}
+              <article id="post-1684" class="post type-post status-publish format-standard has-post-thumbnail hentry category-stories">
+                <header class="entry-header">
+                  <h1 class="entry-title"><a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a></h1>
+                  <div class="entry-meta">
+                    <span class="posted-on">Posted on <a href="{{ post.url }}" rel="bookmark">
+                      <time class="entry-date published" datetime="{{ post.date }}">{{ post.date | date: '%B %d, %Y' }}</time></a>
+                    </span>
+                    <span class="byline"> by <span class="author vcard"><a class="url fn n" href="author/{{ post.author }}">{{ post.author}}</a><span></span>
+                  </div>
+                </header>
+                <div class="entry-content">
+                  <p class="remove-all-styles">{{ post.excerpt| remove: '<strong>' | remove: '</strong>' }}</p>
+                  <a class="continute-reading-link" href="{{ post.url }}/#read-more" />Continue reading <span class="meta-nav">→</span></a>
+                </div>
+                <footer class="entry-footer"></footer>
+              </article>
+              {% endfor %}
+            </div>
+              <!--.col-md-8-->
+            </div>
+            <!--.container-->
+        </main>
+        <!-- #main -->
+        </div>
+        <!-- #primary -->
+      </div>
+      <!-- #content -->
+      {% include footer.html %}
+      <!-- #colophon -->
+    </div>
+    <!-- #page -->
+    {% include scripts.html %}
+</body>
+</html>

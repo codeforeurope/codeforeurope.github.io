@@ -21,6 +21,9 @@
 #__wb_record_overlay_div {
   cursor: wait !important;
 }
+.remove-all-styles {
+    all: revert;
+  }
 .__wb_record_content {
   opacity: 1.0;
   position: fixed;
@@ -1919,7 +1922,6 @@ object {
     content: ' ';
     display: block;
     height: 10px;
-    background: rgb(0, 153, 204) url('http://codeforeurope.net/css/bg.png') repeat;
 }
 
 .title-blurb {
@@ -1980,7 +1982,6 @@ a.learn-btn {
     content: ' ';
     display: block;
     height: 10px;
-    background: rgb(0, 153, 204) url('http://codeforeurope.net/css/bg.png') repeat;
 }
 
 .small-hero {
@@ -2061,7 +2062,6 @@ a.learn-btn {
     content: ' ';
     display: block;
     height: 10px;
-    background: rgb(0, 153, 204) url('http://codeforeurope.net/css/bg.png') repeat;
 }
 
 .fellowships {
@@ -2302,7 +2302,6 @@ h1.update-title {
     content: ' ';
     display: block;
     height: 10px;
-    background: rgb(0, 153, 204) url('http://codeforeurope.net/css/bg.png') repeat;
 }
 
 .update-btn {
@@ -2881,7 +2880,6 @@ h3.fellow-t {
 	    display: block;
 	    height: 10px;
 	    border-top: 1px solid #0081A5;
-	    background: rgb(0, 153, 204) url('http://codeforeurope.net/css/bg.png') repeat;
 	}
 
 	.front-section.fellowships,
@@ -3223,7 +3221,6 @@ h3.fellow-t {
 	    display: block;
 	    height: 10px;
 	    border-top: 1px solid #0081A5;
-	    background: rgb(0, 153, 204) url('http://codeforeurope.net/css/bg.png') repeat;
 	}
 /*--------------------------------------------------------------
 17.2.4 Single Page Layout Smart Phone
@@ -6723,7 +6720,7 @@ Copyright (c) 2015 Daniel Eden
   font-family: 'Lobster Two';
   font-style: normal;
   font-weight: 400;
-  src: local('Lobster Two'), local('LobsterTwo'), url(/web/20160406145654/http://fonts.gstatic.com/s/lobstertwo/v8/Law3VVulBOoxyKPkrNsAaI4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  src: local('Lobster Two'), local('LobsterTwo'), url(http://fonts.gstatic.com/s/lobstertwo/v8/Law3VVulBOoxyKPkrNsAaI4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* latin */
@@ -6731,7 +6728,7 @@ Copyright (c) 2015 Daniel Eden
   font-family: 'Lobster Two';
   font-style: normal;
   font-weight: 700;
-  src: local('Lobster Two Bold'), local('LobsterTwo-Bold'), url(/web/20160406145654/http://fonts.gstatic.com/s/lobstertwo/v8/bmdxOflBqMqjEC0-kGsIiIlIZu-HDpmDIZMigmsroc4.woff2) format('woff2');
+  src: local('Lobster Two Bold'), local('LobsterTwo-Bold'), url(http://fonts.gstatic.com/s/lobstertwo/v8/bmdxOflBqMqjEC0-kGsIiIlIZu-HDpmDIZMigmsroc4.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* latin */
@@ -6739,7 +6736,7 @@ Copyright (c) 2015 Daniel Eden
   font-family: 'Lobster Two';
   font-style: italic;
   font-weight: 400;
-  src: local('Lobster Two Italic'), local('LobsterTwo-Italic'), url(/web/20160406145654/http://fonts.gstatic.com/s/lobstertwo/v8/Ul_16MSbfayQv1I4QhLEoMu2Q0OS-KeTAWjgkS85mDg.woff2) format('woff2');
+  src: local('Lobster Two Italic'), local('LobsterTwo-Italic'), url(http://fonts.gstatic.com/s/lobstertwo/v8/Ul_16MSbfayQv1I4QhLEoMu2Q0OS-KeTAWjgkS85mDg.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* latin */
@@ -6747,6 +6744,6 @@ Copyright (c) 2015 Daniel Eden
   font-family: 'Lobster Two';
   font-style: italic;
   font-weight: 700;
-  src: local('Lobster Two Bold Italic'), local('LobsterTwo-BoldItalic'), url(/web/20160406145654/http://fonts.gstatic.com/s/lobstertwo/v8/LEkN2_no_6kFvRfiBZ8xpI9ObOXPY1wUIXqKtDjSdsY.woff2) format('woff2');
+  src: local('Lobster Two Bold Italic'), local('LobsterTwo-BoldItalic'), url(http://fonts.gstatic.com/s/lobstertwo/v8/LEkN2_no_6kFvRfiBZ8xpI9ObOXPY1wUIXqKtDjSdsY.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
