@@ -34,18 +34,14 @@ blockquote {
   padding: 0 30px 10px;
   font-style: italic;
   font-size: 1.2em;
-  font-family: Georgia,Times,"Times New Roman",serif;
   border-left: 0;
 }
-blockquote {
-  background: url("http://codeforeurope.net/css/quote.png") no-repeat scroll 0 0 transparent;
-}
+
 address {
   margin: 0 0 1.5em;
 }
 pre {
   background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 15px;
   font-size: 0.9375rem;
   line-height: 1.6;
@@ -58,7 +54,6 @@ code,
 kbd,
 tt,
 var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem;
 }

@@ -605,7 +605,6 @@ a:active {
 }
 
 .comment-author.vcard {
-	font-family: Helvetica, Arial, sans-serif;
 	color: #009AC7;
 	font-weight: 600;
 }
@@ -834,10 +833,6 @@ object {
 
 .hero a {
     color: white;
-}
-
-.hero h2 {
-    font-family: Helvetica, Arial, sans-serif;
 }
 
 .header-image i {
@@ -1312,6 +1307,7 @@ a.update-btn {
 footer.site-footer {
 	padding: 50px;
 	background-color: #ffffff;
+  border-top: 1px solid #eee;
 }
 
 .footer-nav {
