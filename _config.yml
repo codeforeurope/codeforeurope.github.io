@@ -5,3 +5,6 @@ defaults:
       type: "static"
     values:
       layout: "default"
+
+sass:
+    style: compressed
