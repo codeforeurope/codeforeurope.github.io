@@ -34,18 +34,18 @@
 5.1 Links
 --------------------------------------------------------------*/
 a {
-	color: #68C8C6; /*teal*/
+	color: $primary-color;
 	text-decoration: none;
 }
 
 a:visited {
-	color: #666666;
+	color: $primary-color;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: #56A0D3; /*Light Blue*/
+	color: $focus-color; /*Light Blue*/
 	text-decoration: none;
 }
 
@@ -65,12 +65,12 @@ a:active {
 .nav-close i {
 	padding: 1em;
     cursor: pointer;
-    color: #fff;
+    color: $neutral-color;
 }
 
 .nav-close i:hover {
     cursor: pointer;
-    color: #56A0D3; /*Light Blue*/
+    color: $focus-color; /*Light Blue*/
     background: rgba(255,255,255,0.2);
 }
 
@@ -88,7 +88,7 @@ a:active {
     width: 35px;
     height: 5px;
     border-radius: 1px;
-    background: #fff;
+    background: $neutral-color;
     cursor: pointer;
 }
 .nav-toggle span:before {
@@ -174,14 +174,14 @@ a:active {
 
 .sidebar-nav ul li a:hover {
     text-decoration: none;
-    color: #56A0D3; /*Light Blue*/
+    color: $focus-color; /*Light Blue*/
     background: rgba(255,255,255,0.2);
 }
 
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
     text-decoration: none;
-     color: #56A0D3; /*Light Blue*/
+     color: $focus-color; /*Light Blue*/
 }
 
 .sidebar-nav > .sidebar-brand {
@@ -191,11 +191,11 @@ a:active {
 }
 
 .sidebar-nav > .sidebar-brand a {
-    color: #999;
+    color: $dark-color;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
+    color: $inverse-color;
     background: none;
 }
 
@@ -239,8 +239,7 @@ a:active {
 .main-navigation .current_page_item > a:hover,
 .main-navigation .current_page_item li:hover,
 .main-navigation .current_page_parent .current_page_item > a  {
-	color: #fff;
-	color: hsl(0, 0%, 100%);
+	color: $neutral-color;
 }
 
 .main-navigation ul li:hover > ul {
@@ -446,9 +445,9 @@ a:active {
 10.1.1 Pages
 --------------------------------------------------------------*/
 .page-entry-header {
-	font-family: "Lobster Two", sans-serif;
+	font-family: $primary-font;
     font-weight: 300;
-    color: #009AC7;
+    color: $primary-color;
 }
 
 .page-entry-header h1.entry-title {
@@ -457,9 +456,9 @@ a:active {
 
 .archive-title {
 	font-size: 46px;
-	font-family: "Lobster Two", sans-serif;
+	font-family: $primary-font;
     font-weight: 300;
-    color: #009AC7;
+    color: $primary-color;
 }
 
 /*--------------------------------------------------------------
@@ -505,7 +504,7 @@ a:active {
     overflow: hidden;
     background: rgb(0, 153, 204) no-repeat center fixed;
     background-size: cover;
-    color: #fff;
+    color: $neutral-color;
 }
 
 .entry-header-inner {
@@ -523,20 +522,20 @@ a:active {
 }
 
 .entry-header-inner a {
-	color: #fff;
-	border-bottom: 1px dotted #fff;
+	color: $inverse-color;
+	border-bottom: 1px dotted $inverse-color;
 }
 
 .entry-header-inner a:hover {
-	color: #F1645D;
-	border-bottom: 1px dotted #F1645D;
+	color: $focus-color;
+	border-bottom: 1px dotted $focus-color;
 
 }
 
 .header-no-background h1 {
 	font-size: 46px;
-	font-family: 'Lobster Two', sans-serif;
-	color: #009AC7;;
+	font-family: $primary-font;
+	color: $primary-color;
 }
 
 .header-no-background .entry-header-content a {
@@ -824,7 +823,7 @@ object {
 }
 
 .hero h1 {
-	font-family: "Lobster Two", sans-serif;
+	font-family: $primary-font;
     margin: 200px 0 0 0;
     font-weight: 300;
     font-size: 45px;
@@ -887,10 +886,6 @@ a.learn-btn {
 /*--------------------------------------------------------------
 13.2 Small Header for other pages
 --------------------------------------------------------------*/
-.small-header {
-	background: rgb(0, 153, 204);
-}
-
 .small-hero-wrapper {
 	padding-top: 25px;
 }
@@ -930,13 +925,13 @@ a.learn-btn {
 14.0 Front Page Styles
 --------------------------------------------------------------*/
 .section-title {
-	font-family: "Lobster Two", sans-serif;
+	font-family: $primary-font;
 	color: #009AC7;
 	font-size: 46px;
 }
 
 .section-title-2 {
-	font-family: "Lobster Two", sans-serif;
+	font-family: $primary-font;
 	color: #ffffff;
 	font-size: 46px;
 }
@@ -1081,7 +1076,7 @@ h1.fellowship-title {
 
 .feature-inner h1 {
 	font-size: 24px;
-	font-family: "Lobster Two", sans-serif;
+	font-family: $primary-font;
 	font-weight: 300;
 }
 
@@ -1183,7 +1178,7 @@ a.more:hover {
 }
 
 .updates-inner h1 {
-	font-family: "Lobster Two", sans-serif;
+	font-family: $primary-font;
 	font-weight: 300;
 	font-size: 46px;
 }
@@ -1492,9 +1487,9 @@ footer.site-footer {
 h1.fellow-t,
 h2.fellow-t,
 h3.fellow-t {
-	font-family: "Lobster Two", sans-serif;
+	font-family: $primary-font;
     font-weight: 300;
-    color: #009AC7;
+    color: $primary-color;
 }
 
 .fellow-t img {
