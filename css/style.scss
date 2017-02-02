@@ -799,7 +799,6 @@ object {
     position: relative;
     min-height: 800px;
     max-height: 800px;
-    background: rgb(0, 153, 204) no-repeat center fixed;
     background-size: cover;
     color: #fff;
 }
@@ -810,7 +809,7 @@ object {
     width: 100%;
     min-height: 800px;
     max-height: 800px;
-    background: rgba(0, 153, 204, .5);
+    background-color: $primary-transparant-color;
     background-size: cover;
 }
 
@@ -1045,7 +1044,7 @@ h1.fellowship-title {
 
 .featured {
 	padding: 100px 50px 100px 50px;
-	background-color: #56A0D3;
+	background-color: $primary-transparant-color;
 }
 
 .feature-inner {
@@ -1085,14 +1084,14 @@ h1.fellowship-title {
 	width: 100px;
 	height: 100px;
 	border-radius: 100px;
-	border: 5px solid #91C2E2;
+  border: 4px solid $primary-color;
 	font-size: 50px;
-	background-color: #009AC7;
+	background-color: $primary-transparant-color;
 }
 
 .feature-icon i {
 	padding-top: 20px;
-	color: #eeeeee;
+	color: #ffffff;
 	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 	-webkit-transition: all 0.9s ease 0s;
     -moz-transition: all 0.9s ease 0s;
