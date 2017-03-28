@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name='viewport' content='width=320,initial-scale=1,user-scalable=0'>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Code for Europe</title>
+        <style>
+            /* http://meyerweb.com/eric/tools/css/reset/ 
+               v2.0 | 20110126
+               License: none (public domain)
+            */
+            
+            html, body, div, span, applet, object, iframe,
+            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+            a, abbr, acronym, address, big, cite, code,
+            del, dfn, em, img, ins, kbd, q, s, samp,
+            small, strike, strong, sub, sup, tt, var,
+            b, u, i, center,
+            dl, dt, dd, ol, ul, li,
+            fieldset, form, label, legend,
+            table, caption, tbody, tfoot, thead, tr, th, td,
+            article, aside, canvas, details, embed, 
+            figure, figcaption, footer, header, hgroup, 
+            menu, nav, output, ruby, section, summary,
+            time, mark, audio, video {
+            	margin: 0;
+            	padding: 0;
+            	border: 0;
+            	font-size: 100%;
+            	font: inherit;
+            	vertical-align: baseline;
+            }
+            /* HTML5 display-role reset for older browsers */
+            article, aside, details, figcaption, figure, 
+            footer, header, hgroup, menu, nav, section {
+            	display: block;
+            }
+            body {
+            	line-height: 1;
+            }
+            ol, ul {
+            	list-style: none;
+            }
+            blockquote, q {
+            	quotes: none;
+            }
+            blockquote:before, blockquote:after,
+            q:before, q:after {
+            	content: '';
+            	content: none;
+            }
+            table {
+            	border-collapse: collapse;
+            	border-spacing: 0;
+            }
+        </style>
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <style>
+            /*
+            @import url(https://fonts.googleapis.com/css?family=Lobster+Two);
+            @import url(https://db.onlinewebfonts.com/c/c903197e73250aa294b2a8b8042f5c9c?family=DharmaGothicEW01-Regular);
+            */
+            
+            html, body {
+                font-family: "Lato","Verdana","Arial",sans-serif;
+                font-size: 100%;
+                font-weight: 100;
+
+                background: #3591c0;
+                color: #111;
+            }
+            .wrapper {
+                max-width: 800px;
+                margin: auto;
+            }
+            footer {
+                min-height: 200px;
+                color: #fff;
+            }
+            
+            header {
+                padding: 20px;
+                color: #fff;
+            }
+            header a {
+                color: #fff;
+                text-decoration: none;
+            }
+            nav a {
+                margin-left: 14px;
+                line-height: 2.4em;
+            }
+            
+            nav {
+                margin-top: 20px;
+            }
+            
+            h1 {
+                font-size: 2.4em;
+                line-height: 1.2em;
+            }
+            
+            h2 {
+                font-size: 1.4em;
+                line-height: 1.4em;
+            }
+            
+            h3 {
+                font-size: 1.2em;
+                line-height: 1.6em;
+            }
+            
+            hr {
+                border: 0;
+                border-bottom: 1px solid silver;
+            }
+            
+            h1.logo {
+                padding-top: 0.2em;
+                font-size: 3.2em;
+                width: 2em;
+                text-align: center;
+                font-family: 'Lobster Two';
+                font-weight: 100;
+                line-height: 0.8em;
+            }
+            h1.logo span {
+                font-family: 'DharmaGothicEW01-Regular';
+                display: block;
+                font-size: 0.52em;
+            }
+            
+            
+            
+            li {
+                display: inline-block;
+            }
+            
+            main {
+                background: #FFFFFF;
+                padding: 2px 0;
+            }
+            
+            main section {
+                margin: 20px;
+                margin-top: 80px;
+            }
+            
+            p {
+                margin: 1em 0em;
+                line-height: 1.4em;
+            }
+            
+            p.headline {
+                font-size:1.3em;
+                margin-bottom: 0em;
+            }
+            
+            b {
+                font-weight: 900;
+            }
+            
+            img {
+                background: #3591c0;
+                padding: 20px;
+                border-radius: 10px;
+                margin: 20px;
+                width: 100px;
+            }
+            
+            img.social {
+                width: 30px;
+                background: white;
+                border-radius: 100%;
+                padding: 10px
+            }
+            
+            .left {
+                float: left;
+                width: 200px;
+            }
+            
+            .right {
+                float: right;
+                width: 530px;
+            }
+            
+            a.cta_button {
+                display: block;
+                font-size: 1.2em;
+                color: white;
+                background: #3591c0;
+                box-shadow: 0px 3px 2px #d3d3d3; 
+    
+                margin: 0.8em;
+                padding: 0.8em;
+                text-decoration: none;
+                border-radius: 0.4em;
+                width: 10em;
+                margin: auto;
+                text-align: center;
+            }
+            .calendar {
+                float: right;
+            }
+            @media screen and (max-width: 800px) {
+                .left {
+                    text-align: center;
+                    width: 100%;
+                }
+                .left img {
+                    width: 48px;
+                    margin: 12px;
+                }
+                h1 {
+                    text-align: center;
+                }
+                .left {
+                    float: none;
+                }
+                .right {
+                    float: none;
+                    width: 100%;
+                }
+                .calendar {
+                    float: none;
+                    width: 100%;
+                }
+                .wrapper {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <h1 class="logo"><a href="/"><img alt="Code for Europe" src="img/white-logo.png"></a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="#aboutus">About us</a></li>
+                        <li><a href="#forgovernments">For governments</a></li>
+                        <li><a href="#fordevelopers">For developers</a></li>
+                        <li><a href="https://medium.com/code-for-europe">Read our blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+            
+        <main>
+            <div class="wrapper">
+                <section style="text-align:center; margin: 2em 0; font-size: 1.6em">
+                    <h3 style="font-style: italic">
+                        <p>We're on a mission to make government<br>work in the digital age.</p>
+                    </h3>
+                </section>
+                
+                <a name="aboutus"></a>
+                <section>
+                    <p class="headline">Code for Europe is a network of developers and designers that create digital services for cities and communities. </p>
+                    <p>We do this in order to solve real, human problems in a reusable, flexible and inclusive way. We empower local communities to build, share and adapt civic tech. We solve local challenges by profiting from the shared experience of an international network of likeminded fellows.
+                </section>
+                
+                <section>
+                    <p><a class="cta_button" href="http://eepurl.com/ctHYQz">Sign up for our newsletter</a></p>    
+                </section>
+                
+                <a name="forgovernments"></a>
+                <section>
+                    <div class="left">
+                        <img src="img/icon-gov.png">
+                    </div>
+                    <div class="right">
+                        <h1>For cities and other governments</h1>
+                        <p>Coders can help cities collaborate in bottom-up innovation. Code for Europe promotes and facilitates development of software solutions together with governments. We connect people to share knowledge, experience and code between cities.</p>
+                        <h2>In-house fellowships</h2>
+                        <p>Having a small team of developers and designers that working within government, finding problems, creating solutions and helping spread awareness of how contemporary technology works among the government workforce.</p>
+                        <h2>Supporting brigades</h2>
+                        <p>Having an active community of coders working on apps and data services to support the efforts of your local government.</p>
+                        <a href="" class="cta_button">More information</a>
+                    </div>
+                    <div style="clear: both"></div>
+                </section>
+                
+                <a name="fordevelopers"></a>
+                <section>
+                    <div class="left">
+                        <img src="img/icon-community.png">
+                    </div>
+                    <div class="right">
+                        <h1>For designers and developers</h1>
+                        <p>At Code for Europe we think that solving real problems for real people is the best. Join us!</p>
+                        <h2>Interested in becoming a fellow?</h2>
+                        <p>If you are would like to join our network work within government, or are currently working for government and would like to join. </p>
+                        <p>Please send us an e-mail to get in touch: <a href="mailto:info@codefor.eu">info@codefor.eu</a>.</p>
+                        <h2>Want to join a brigade?</h2>
+                        <p>volunteer in a project that serves communities “glocally”</p>
+                        <a href="" class="cta_button">find a brigade</a>
+                    </div>
+                    <div style="clear: both"></div>
+                </section>
+                
+                <!-- Moeten we hier iets mee?
+                <section>
+                    <h2>We help government work for the people who need it most.</h2>
+                    <h2>What people are saying abous us.</h2>
+                </section>
+                <hr>
+                https://amsterdamsmartcity.com/
+                https://en.wikipedia.org/wiki/Code_for_America
+                Open Knowledge, Open State, Open Platforms, Open Data, Open Source Development
+                The largest program by numbers is the Brigade, which comprises local groups of civic hackers and other community volunteers who meet regularly to support the technology, design, and open data efforts of their local governments. Over 5,000 people in the US are involved in a Code for America Brigade.
+                Through the Fellowship program, small teams of developers and designers work with a city, county or state government for a year, building open source apps and helping spread awareness of how contemporary technology works among the government workforce and leadership.
+                Through the Accelerator, Code for America provides seed funding, office space, and mentorship to civic startups.
+                Code for America also runs a Peer Network for innovators in local government.
+                Lastly, Code for All (part of Code for America) organizes similar efforts outside the US, particularly Brigades and fellowship programs in countries around the world.[2]
+                <h2>Projects</h2>
+                <p>We are working on putting all our projects on <a href="https://ogptoolbox.org/">OGP Toolbox</a></p>
+                -->
+                
+                <section class="meetups">
+                    <p><iframe class="calendar" src="https://calendar.google.com/calendar/embed?mode=AGENDA&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=qsvt3n6jmd85jdnk5i7a5qo22o%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=Europe%2FAmsterdam" style="border-width:0" width="300" height="400" frameborder="0" scrolling="no"></iframe></p>
+                    <h1>Talk to us</h1>
+                    <p>Please feel free to join our weekly online meetup, or at events. Check out our calendar for the next meetup.</p>
+                    <div style="clear: both"></div>
+                </section>
+            
+                
+            </div>
+        </main>
+        <footer>
+            <div class="wrapper">
+                <div style="text-align: center; margin-top: 80px">
+                    <h2>How to reach us</h2>
+                    <a href="https://github.com/orgs/codeforeurope">
+                        <img class="social" src="img/social/Github.png">
+                    </a>
+                    <a href="https://www.linkedin.com/groups/13514022">
+                        <img class="social" src="img/social/Linkedin.png">
+                    </a>
+                    <a href="https://twitter.com/codeforeu">
+                        <img class="social" src="img/social/Twitter.png">
+                    </a>
+                    <a href="https://codeforall.slack.com">
+                        <img class="social" src="img/social/Slack.png">
+                    </a>
+                    <a href="mailto://info@codefor.eu" style="color: white; text-decoration: none">
+                        <img class="social" src="img/social/Mail.png">
+                    </a>
+                    <br>
+                    <a href="mailto://info@codefor.eu" style="color: white; text-decoration: none">info@codefor.eu</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
