@@ -2,7 +2,7 @@
 "type": "FeatureCollection",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
-{ "type": "Feature", "properties": { "Name": "Code for Ireland", "description": "http:\/\/codeforireland.com\/", "type": "brigades"}, "geometry": { "type": "Point", "coordinates": [ -6.2603097, 53.3498053, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Code for Ireland", "description": "http:\/\/codeforireland.com\/", "type": "chapters"}, "geometry": { "type": "Point", "coordinates": [ -6.2603097, 53.3498053, 0.0 ] } },
 { "type": "Feature", "properties": { "Name": "Code for Romania", "description": "http:\/\/code4.ro\/", "type": "brigades"}, "geometry": { "type": "Point", "coordinates": [ 24.96676, 45.943161, 0.0 ] } },
 { "type": "Feature", "properties": { "Name": "Code for Poland", "description": "https:\/\/kodujdlapolski.pl\/", "type": "brigades"}, "geometry": { "type": "Point", "coordinates": [ 19.145136, 51.919438, 0.0 ] } },
 { "type": "Feature", "properties": { "Name": "Code for NL", "description": "http:\/\/www.codefor.nl", "type": "brigades"}, "geometry": { "type": "Point", "coordinates": [ 4.4777325, 51.9244201, 0.0 ] } },
