@@ -1,0 +1,20 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Code for Ireland", "description": "http:\/\/codeforireland.com\/", "type": "brigades"}, "geometry": { "type": "Point", "coordinates": [ -6.2603097, 53.3498053, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Code for Romania", "description": "http:\/\/code4.ro\/", "type": "brigades"}, "geometry": { "type": "Point", "coordinates": [ 24.96676, 45.943161, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Code for Poland", "description": "https:\/\/kodujdlapolski.pl\/", "type": "brigades"}, "geometry": { "type": "Point", "coordinates": [ 19.145136, 51.919438, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Code for NL", "description": "http:\/\/www.codefor.nl", "type": "brigades"}, "geometry": { "type": "Point", "coordinates": [ 4.4777325, 51.9244201, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Code for Ruhrgebiet", "description": "https:\/\/codefor.de\/ruhrgebiet\/", "type": "brigades"}, "geometry": { "type": "Point", "coordinates": [ 7.0074592, 51.4590046, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Code for Germany (20+ labs)", "description": "https:\/\/codefor.de\/", "type": "brigades"}, "geometry": { "type": "Point", "coordinates": [ 10.451526000000101, 51.165691, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Code for Eindhoven", "description": "Contact: info@codefor.nl", "type": "brigades", "type": "fellowship"}, "geometry": { "type": "Point", "coordinates": [ 5.4697225, 51.441642, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Helsinki Open Software Development Team", "description": "http:\/\/dev.hel.fi\/", "type": "fellowship"}, "geometry": { "type": "Point", "coordinates": [ 24.938379, 60.1698557, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Amsterdam", "description": "Contact: Johan Groenen (johan.groenen@gmail.com)", "type": "fellowship"}, "geometry": { "type": "Point", "coordinates": [ 4.8951679, 52.3702157, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Waag Society", "description": null, "type": "partner"}, "geometry": { "type": "Point", "coordinates": [ 4.900291, 52.372807, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Stichting Open State Foundation", "description": null, "type": "partner" }, "geometry": { "type": "Point", "coordinates": [ 4.9167027, 52.3729681, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "DataLab Amsterdam", "description": null, "type": "partner"}, "geometry": { "type": "Point", "coordinates": [ 4.90720590000001, 52.3630661, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Ministerie van Binnenlandse Zaken en Koninkrijksrelaties", "description": null, "type": "partner"}, "geometry": { "type": "Point", "coordinates": [ 4.322196, 52.0790539, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Forum Virium Helsinki Oy", "description": null, "type": "partner"}, "geometry": { "type": "Point", "coordinates": [ 24.9510324, 60.1666612, 0.0 ] } }
+]
+}
