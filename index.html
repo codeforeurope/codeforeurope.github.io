@@ -390,10 +390,11 @@
                     lyr.setIcon(L.mapbox.marker.icon({
                         'marker-color': fillColor
                     }));
-                    var content = '<b>' + lyr.feature.properties.name + '<\/b> (' + lyr.feature.properties.type + ')<br \/>' +
-                        '<a href="' + lyr.feature.properties.description + '">' + lyr.feature.properties.description + '</a>';
+                    var content = '<b>' + lyr.feature.properties.name + '<\/b> (' + lyr.feature.properties.type + ')<br \/>';
+		    if(lyr.feature.properties.description){
+                      var content += '<a href="' + lyr.feature.properties.description + '">' + lyr.feature.properties.description + '</a>';
+                    };
                     lyr.bindPopup(content);
-                    
                 });
                 map.fitBounds(featLayer.getBounds());
             });
