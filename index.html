@@ -392,7 +392,7 @@
                     }));
                     var content = '<b>' + lyr.feature.properties.name + '<\/b> (' + lyr.feature.properties.type + ')<br \/>';
 		    if(lyr.feature.properties.description){
-                      var content += '<a href="' + lyr.feature.properties.description + '">' + lyr.feature.properties.description + '</a>';
+                      content += '<a href="' + lyr.feature.properties.description + '">' + lyr.feature.properties.description + '</a>';
                     };
                     lyr.bindPopup(content);
                 });
