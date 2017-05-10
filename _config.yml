@@ -1,0 +1,13 @@
+defaults:
+  -
+    scope:
+      path: ""
+      type: "static"
+    values:
+      layout: "default"
+collections:
+  pages:
+    output: true
+
+sass:
+    style: compressed

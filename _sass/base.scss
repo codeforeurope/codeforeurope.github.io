@@ -1,0 +1,206 @@
+body { margin:0; padding:0; }
+#map { height: 400px; width:auto; border-radius: 10px;}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+  @import url(https://fonts.googleapis.com/css?family=Lobster+Two);
+  @import url(https://db.onlinewebfonts.com/c/c903197e73250aa294b2a8b8042f5c9c?family=DharmaGothicEW01-Regular);
+*/
+
+html, body {
+    font-family: "Lato","Verdana","Arial",sans-serif;
+    font-size: 100%;
+    font-weight: 100;
+
+    background: #3591c0;
+    color: #111;
+}
+.wrapper {
+    max-width: 800px;
+    margin: auto;
+}
+footer {
+    min-height: 200px;
+    color: #fff;
+}
+
+header {
+    padding: 20px;
+    color: #fff;
+}
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+nav a {
+    margin-left: 14px;
+    line-height: 2.4em;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 2.4em;
+    line-height: 1.2em;
+}
+
+h2 {
+    font-size: 1.4em;
+    line-height: 1.4em;
+}
+
+h3 {
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px solid silver;
+}
+
+li {
+    display: inline-block;
+}
+
+main {
+    background: #FFFFFF;
+    padding: 2px 0;
+}
+
+main section {
+    margin: 20px;
+    margin-top: 80px;
+}
+
+p {
+    margin: 1em 0em;
+    line-height: 1.4em;
+}
+
+p.headline {
+    font-size:1.3em;
+    margin-bottom: 0em;
+}
+
+b {
+    font-weight: 900;
+}
+
+img.logo {
+    background: #3591c0;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    width: 100px;
+}
+
+a.social {
+    text-decoration: none;
+}
+img.social {
+    width: 30px;
+    background: white;
+    border-radius: 100%;
+    padding: 10px
+}
+
+.left {
+    float: left;
+    width: 200px;
+}
+
+.right {
+    float: right;
+    width: 530px;
+}
+
+a.cta_button {
+    display: block;
+    font-size: 1.2em;
+    color: white;
+    background: #3591c0;
+    box-shadow: 0px 3px 2px #d3d3d3;
+
+    margin: 0.8em;
+    padding: 0.8em;
+    text-decoration: none;
+    border-radius: 0.4em;
+    width: 10em;
+    margin: auto;
+    text-align: center;
+}
+.calendar {
+    float: right;
+}
+@media screen and (max-width: 800px) {
+    .left {
+        text-align: center;
+        width: 100%;
+    }
+    .left img {
+        width: 48px;
+        margin: 12px;
+    }
+    h1 {
+        text-align: center;
+    }
+    .left {
+        float: none;
+    }
+    .right {
+        float: none;
+        width: 100%;
+    }
+    .calendar {
+        float: none;
+        width: 100%;
+    }
+    .wrapper {
+        width: 100%;
+    }
+}
