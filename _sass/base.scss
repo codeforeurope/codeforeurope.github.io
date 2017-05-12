@@ -53,8 +53,6 @@ html, body {
     font-family: "Lato","Verdana","Arial",sans-serif;
     font-size: 100%;
     font-weight: 100;
-
-    background: #3591c0;
     color: #111;
 }
 .statement {
@@ -65,19 +63,30 @@ html, body {
 .statement h3 {
     font-style: italic;
 }
+
+header, footer {
+    background: #3591c0;
+}
+
+header .wrapper, footer .wrapper {
+    box-shadow: none;
+    color: #fff;
+    background: #3591c0;
+}
 .wrapper {
+    background: #ffffff;
     max-width: 800px;
     margin: auto;
+    padding: 20px;
+    box-shadow: 8px 0 11px 0px rgba(225, 225, 225, 0.3), -8px 0 5px 0px rgba(225, 225, 225, 0.3);
 }
+
 footer {
     min-height: 200px;
     color: #fff;
 }
 
-header {
-    padding: 20px;
-    color: #fff;
-}
+
 header a {
     color: #fff;
     text-decoration: none;
@@ -116,7 +125,7 @@ li {
 }
 
 main {
-    background: #FFFFFF;
+    background: #fefefefe;
     padding: 2px 0;
 }
 
@@ -145,6 +154,11 @@ img.logo {
     border-radius: 10px;
     margin: 20px;
     width: 100px;
+}
+
+img.logo_small {
+    padding-top: 20px;
+    width: 50px;
 }
 
 a.social {

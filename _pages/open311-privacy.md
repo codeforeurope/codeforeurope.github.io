@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Privacy Policy for Open311"
+title: "Privacy Policy | Open311"
 author: Milo
 permalink: /privacy/open311
 ---
