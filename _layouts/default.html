@@ -2,7 +2,24 @@
 <html>
   {% include header.html %}
   <body>
-    {{ content }}
+    <header>
+      <div class="wrapper">
+        <h1><a href="/"><img class="logo" alt="Code for Europe" src="/img/white-logo.png"></a></h1>
+          <nav>
+            <ul>
+              <li><a href="/#aboutus">About us</a></li>
+              <li><a href="/#forgovernments">For governments</a></li>
+              <li><a href="/#fordevelopers">For developers</a></li>
+              <li><a href="https://medium.com/code-for-europe">Read our blog</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+    <main>
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
     {% include footer.html %}
   </body>
 </html>

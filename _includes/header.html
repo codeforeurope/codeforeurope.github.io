@@ -1,18 +1,16 @@
 <head>
   <title>{{ page.title }}</title>
-  <meta name='viewport' content='width=320,initial-scale=1,user-scalable=0'>
+  <meta name="viewport" content="width=320,initial-scale=1,user-scalable=0">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta property="og:type" content="{{ page.layout }}">
   <meta property="og:url" content="{{ site.url }}">
-  <meta property="og:site_name" content="Code for Europe">
-  <meta property='og:title' name='title' content='{{ page.title }}'>
-  <meta property='og:description' name='description' content='Code for Europe is a network of developers and designers that create digital services for communities and cities.'>
-  <meta property='og:image' content='http://www.codefor.eu/img/CfE.png'>
-  <meta name='keywords' content=''>
-  <link rel='image_src' href='http://www.codefor.eu/img/CfE.png'/>
-  <link rel="shortcut icon" sizes="128x128" href="http://www.codefor.eu/img/CfE-icon.png" />
-  <link href='https://api.mapbox.com/mapbox.js/v3.1.0/mapbox.css' rel='stylesheet' />
+  <meta property="og:site_name" content="Code For Europe">
+  <meta property="og:title" name="title" content="{{ page.title }}">
+  <meta property="og:description" name="description" content="{{ page.description }}">
+  <meta property="og:image" content="{{ "/img/CfE.png" | absolute_url }}">
+  <meta name="keywords" content="{{ page.tags | join: ', ' }}">
+  <link rel="image_src" href="{{ "/img/CfE.png" | absolute_url }}"/>
+  <link rel="shortcut icon" sizes="128x128" href="{{ "/img/CfE-icon.png" | absolute_url }}" />
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css" type="text/css" media="all">
-  
+  <link rel="stylesheet" href="{{ "/css/style.css" | absolute_url }}" type="text/css" media="all">
 </head>

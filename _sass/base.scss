@@ -57,6 +57,14 @@ html, body {
     background: #3591c0;
     color: #111;
 }
+.statement {
+    text-align:center;
+    margin: 2em 0;
+    font-size: 1.6em;
+}
+.statement h3 {
+    font-style: italic;
+}
 .wrapper {
     max-width: 800px;
     margin: auto;

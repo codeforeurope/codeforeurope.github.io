@@ -1,0 +1,43 @@
+<center>
+    <link href='https://api.mapbox.com/mapbox.js/v3.1.0/mapbox.css' rel='stylesheet' />
+    <div id="map"></div>
+    <script src='https://api.mapbox.com/mapbox.js/v3.1.0/mapbox.js'></script>
+    <script>
+        L.mapbox.accessToken = 'pk.eyJ1IjoibWlibG9uIiwiYSI6IjRJak9WYUkifQ.NOqcZh0hQeYTp6BQIZr0GQ';
+        var map = L.mapbox.map('map', 'mapbox.streets')
+            .setView([15.697,52.055], 4);
+
+        var featLayer = L.mapbox.featureLayer().addTo(map);
+        featLayer.loadURL('data/code-for-europe.geojson');
+
+        function getMyColor(myargument) {
+            if (myargument === 'chapter') {
+                return '#996767'
+            };
+            if (myargument === 'fellowship') {
+                return '#679967'
+            };
+            if (myargument === 'partner') {
+                return '#676799'
+            };
+            if (myargument === 'in formation') {
+                return '#cccccc'
+            };
+        }
+
+        featLayer.on('ready', function() {
+            featLayer.eachLayer(function(lyr) {
+                var fillColor = getMyColor(lyr.feature.properties.type);
+                lyr.setIcon(L.mapbox.marker.icon({
+                    'marker-color': fillColor
+                }));
+                var content = '<b>' + lyr.feature.properties.name + '<\/b> (' + lyr.feature.properties.type + ')<br \/>';
+                if(lyr.feature.properties.description){
+                    content += '<a href="' + lyr.feature.properties.description + '">' + lyr.feature.properties.description + '</a>';
+                };
+                lyr.bindPopup(content);
+            });
+            map.fitBounds(featLayer.getBounds());
+        });
+    </script>
+</center>
